@@ -46,14 +46,98 @@
                     <view key="view" contentMode="scaleToFill" id="Aq1-ao-r5m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqf-fP-ifA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="307.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmI-ZY-6IB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="XKz-wE-73W" customClass="CustomImageView" customModule="Mobile_Info" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="79" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="VOB-42-21o"/>
+                                            <constraint firstAttribute="width" constant="150" id="Ygv-80-H1r">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klo-Eu-ubX">
+                                        <rect key="frame" x="162.5" y="237" width="89" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gv1-Eh-oPn">
+                                        <rect key="frame" x="103.5" y="282.5" width="207" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-T2-gSo" customClass="CustomButton" customModule="Mobile_Info" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Edit Profile">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZt-YF-ibr" customClass="CustomButton" customModule="Mobile_Info" customModuleProvider="target">
+                                                <rect key="frame" x="113.5" y="0.0" width="93.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Stars">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lBf-sZ-AVh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gv1-Eh-oPn" firstAttribute="centerY" secondItem="jqf-fP-ifA" secondAttribute="centerY" multiplier="2" id="372-Sx-wCa"/>
+                                    <constraint firstItem="UmI-ZY-6IB" firstAttribute="top" secondItem="jqf-fP-ifA" secondAttribute="top" id="IUf-aM-Y4H"/>
+                                    <constraint firstItem="gv1-Eh-oPn" firstAttribute="centerX" secondItem="jqf-fP-ifA" secondAttribute="centerX" id="LEa-LQ-era"/>
+                                    <constraint firstItem="UmI-ZY-6IB" firstAttribute="height" secondItem="jqf-fP-ifA" secondAttribute="height" multiplier="0.5" id="M17-zf-EG6"/>
+                                    <constraint firstItem="Klo-Eu-ubX" firstAttribute="centerX" secondItem="jqf-fP-ifA" secondAttribute="centerX" id="PZe-7L-qwR"/>
+                                    <constraint firstItem="XKz-wE-73W" firstAttribute="centerY" secondItem="jqf-fP-ifA" secondAttribute="centerY" id="Q0j-8o-cVN">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
+                                    </constraint>
+                                    <constraint firstItem="gv1-Eh-oPn" firstAttribute="width" secondItem="UmI-ZY-6IB" secondAttribute="width" multiplier="0.5" id="VFD-1a-Kxw"/>
+                                    <constraint firstItem="XKz-wE-73W" firstAttribute="centerX" secondItem="jqf-fP-ifA" secondAttribute="centerX" id="gdW-tN-jHP"/>
+                                    <constraint firstItem="UmI-ZY-6IB" firstAttribute="leading" secondItem="jqf-fP-ifA" secondAttribute="leading" id="iHT-sP-td6"/>
+                                    <constraint firstItem="Klo-Eu-ubX" firstAttribute="top" secondItem="XKz-wE-73W" secondAttribute="bottom" constant="8" id="lJ4-o2-nhj">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="UmI-ZY-6IB" secondAttribute="trailing" id="ruh-1v-bOQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-XD-zzs">
+                                <rect key="frame" x="62" y="401.5" width="290" height="384.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2iy-wY-37u">
+                                <rect key="frame" x="152" y="493" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jqf-fP-ifA" firstAttribute="leading" secondItem="atv-8h-1vK" secondAttribute="leading" id="9Fn-AD-rBz"/>
+                            <constraint firstItem="IUw-XD-zzs" firstAttribute="height" secondItem="atv-8h-1vK" secondAttribute="height" multiplier="0.5" id="Auo-iv-lCA"/>
+                            <constraint firstItem="atv-8h-1vK" firstAttribute="trailing" secondItem="jqf-fP-ifA" secondAttribute="trailing" id="CH4-hc-UQW"/>
+                            <constraint firstItem="jqf-fP-ifA" firstAttribute="height" secondItem="atv-8h-1vK" secondAttribute="height" multiplier="0.4" id="VnX-VQ-jbd"/>
+                            <constraint firstItem="jqf-fP-ifA" firstAttribute="top" secondItem="atv-8h-1vK" secondAttribute="top" id="g5w-cw-Tke"/>
+                            <constraint firstItem="IUw-XD-zzs" firstAttribute="top" secondItem="jqf-fP-ifA" secondAttribute="bottom" constant="50" id="hHe-e7-JJm"/>
+                            <constraint firstItem="IUw-XD-zzs" firstAttribute="centerX" secondItem="Aq1-ao-r5m" secondAttribute="centerX" id="q3g-et-FOG"/>
+                            <constraint firstItem="IUw-XD-zzs" firstAttribute="width" secondItem="atv-8h-1vK" secondAttribute="width" multiplier="0.7" id="toO-Jv-kMv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="atv-8h-1vK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" selectedImage="person" id="Zng-Vb-zAc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cq-DP-ncZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="1460"/>
+            <point key="canvasLocation" x="621.73913043478262" y="1459.8214285714284"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="kb4-GO-jB6">
@@ -286,6 +370,7 @@
     </scenes>
     <resources>
         <image name="Apple_A12X" width="1345" height="1489"/>
+        <image name="Hotel" width="750" height="500"/>
         <image name="compare" width="36" height="36"/>
         <image name="home" width="36" height="36"/>
         <image name="home selected" width="36" height="36"/>

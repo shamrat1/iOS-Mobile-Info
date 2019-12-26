@@ -17,6 +17,8 @@
 		C66F867A23B483DA00F27CDE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66F867923B483DA00F27CDE /* CustomView.swift */; };
 		C66F867C23B487BE00F27CDE /* LatestReleaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66F867B23B487BE00F27CDE /* LatestReleaseCollectionViewCell.swift */; };
 		C66F867E23B4911E00F27CDE /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66F867D23B4911E00F27CDE /* PostsTableViewCell.swift */; };
+		C66F868023B4A89500F27CDE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66F867F23B4A89500F27CDE /* CustomButton.swift */; };
+		C66F868223B4ABE200F27CDE /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66F868123B4ABE200F27CDE /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		C66F867923B483DA00F27CDE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C66F867B23B487BE00F27CDE /* LatestReleaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestReleaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		C66F867D23B4911E00F27CDE /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		C66F867F23B4A89500F27CDE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C66F868123B4ABE200F27CDE /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				C66F867923B483DA00F27CDE /* CustomView.swift */,
+				C66F867F23B4A89500F27CDE /* CustomButton.swift */,
+				C66F868123B4ABE200F27CDE /* CustomImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,9 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66F867A23B483DA00F27CDE /* CustomView.swift in Sources */,
+				C66F868223B4ABE200F27CDE /* CustomImageView.swift in Sources */,
 				C66F866423B4799900F27CDE /* ViewController.swift in Sources */,
 				C66F866023B4799900F27CDE /* AppDelegate.swift in Sources */,
 				C66F866223B4799900F27CDE /* SceneDelegate.swift in Sources */,
+				C66F868023B4A89500F27CDE /* CustomButton.swift in Sources */,
 				C66F867723B4805200F27CDE /* HomeViewController.swift in Sources */,
 				C66F867E23B4911E00F27CDE /* PostsTableViewCell.swift in Sources */,
 				C66F867C23B487BE00F27CDE /* LatestReleaseCollectionViewCell.swift in Sources */,
